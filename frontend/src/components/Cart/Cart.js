@@ -13,7 +13,7 @@ const Cart = () => {
     const { enqueueSnackbar } = useSnackbar();
     const handleClickVariant = (variant) => () => {
         // variant could be success, error, warning, info, or default
-        enqueueSnackbar('Đã bỏ khóa học khỏi giỏ hàng', { variant });
+        enqueueSnackbar('Đã bỏ sản phẩm khỏi giỏ hàng', { variant });
     };
 
     const { cart, totalQuantity, totalPrice } = useSelector((state) => state.Allcart)

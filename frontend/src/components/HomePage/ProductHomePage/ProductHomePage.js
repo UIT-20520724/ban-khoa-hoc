@@ -99,10 +99,10 @@ const ProductHomePage = () => {
     return (
         <div >
             <div className='dm-course'>
-                <div className='line-box'></div>
-                <h2 className='header-text'>DANH MỤC KHÓA HỌC</h2>
+                {/* <div className='line-box'></div> */}
+                {/* <h2 className='header-text'>DANH MỤC KHÓA HỌC</h2> */}
                 <div className='slider-dm'>
-                    <Slider {...settings} >
+                    {/* <Slider {...settings} >
                         <button className='dm-btn'>
                             <Link to={'/ProductList/Kỹ năng ngoại ngữ'} style={{ color: '#5b5b5b', textDecoration: 'none' }}>
                                 <Row >
@@ -223,9 +223,9 @@ const ProductHomePage = () => {
                                 </Row>
                             </Link>
                         </button>
-                    </Slider>
+                    </Slider> */}
                     <div className='line-box'></div>
-                    <h2 className='header-text '>KHÓA HỌC MỚI NHẤT</h2>
+                    <h2 className='header-text '>SẢN PHẨM MỚI NHẤT</h2>
                     <div className='new-course'>
                         <Row >
                             {newProducts.map((item) => <Col xs={6} lg={4} md={4} style={{ padding: '8px' }}>
@@ -240,7 +240,7 @@ const ProductHomePage = () => {
                     </Row>
                 </div>
             </div>
-            <div className='hot-course'>
+            {/* <div className='hot-course'>
                 <div className='line-box'></div>
                 <Row>
                     <Col xs='3'>
@@ -333,7 +333,7 @@ const ProductHomePage = () => {
                         <button className='btn-all' onClick={() => navigate("/ProductList")}>Xem tất cả</button>
                     </Col>
                 </Row>
-            </div>
+            </div> */}
         </div>
     )
 }

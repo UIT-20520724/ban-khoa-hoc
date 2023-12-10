@@ -11,7 +11,7 @@ import CustomPagination from "../Pagination/Pagination";
 import LinearProgress from '@mui/material/LinearProgress'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper';
-
+import banner from './banner_drop____mito_mt3_noctua_keycaps_name_1.jpg';
 import './ProductList.css'
 import CoursesDataService from "../../services/CoursesDataService";
 import { FormGroup } from "react-bootstrap";
@@ -47,7 +47,7 @@ const ProductList = (props) => {
         setSort(_sort);
     }
 
-    const img = ['https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/breadcrumb_image.png?1676281841878']
+    const img = [banner]
     const [openListcourse, setopenListcourse] = useState(false);
     const [opensubCourse, setopenSubcourse] = useState(false);
     useEffect(() => {
@@ -93,71 +93,44 @@ const ProductList = (props) => {
     return (<div>
         <Banner imgs={img} />
         <div className='body'>
-            <p><Link className="text-link-home" to='/'>Trang chủ</Link>/<span className="text-link-loai">Danh sách khóa học</span></p>
-            <Row style={{ padding: '15px 0px', margin: '0 -2px' }}>
+            <p><Link className="text-link-home" to='/'>Trang chủ</Link>/<span className="text-link-loai">Danh sách sản phẩm</span></p>
+            {/* <Row style={{ padding: '15px 0px', margin: '0 -2px' }}>
                 <Col xs={12} sm='6' style={{ padding: '0px 8px' }}>
                     <img className="img-banner" style={{ width: '100%', borderRadius: '10px', margin: '10px 0 0 0' }} src='https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/banner_featured_1.png?1676281841878' />
                 </Col>
                 <Col xs={12} sm='6' style={{ padding: '0px 8px', margin: '10px 0 0 0' }}>
                     <img className="img-banner" style={{ width: '100%', borderRadius: '10px' }} src='https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/banner_collection_2.png?1676281841878' />
                 </Col>
-            </Row>
+            </Row> */}
             <div style={{ margin: '20px 0' }}>
                 <Row >
                     <Col xs='12' md='3' style={{ position: 'relative', padding: '0 20px 0 20px' }} >
                         <p className="header-text-loai">{categories}</p>
                         <div className={`sb-subcourse`}>
-                            <p className="header-text-sub" onClick={() => setopenSubcourse(!opensubCourse)}>KHÓA HỌC</p>
+                            <p className="header-text-sub" onClick={() => setopenSubcourse(!opensubCourse)}>SẢN PHẨM</p>
                             <ul className={`course-nav `}>
                                 <li><Link to='/' className='text-course-nav'>Trang chủ</Link></li>
-                                <li style={{ position: 'relative' }} className='text-course-nav' onClick={() => setopenListcourse(!openListcourse)}>Danh sách khóa học
+                                <li style={{ position: 'relative' }} className='text-course-nav' onClick={() => setopenListcourse(!openListcourse)}>Danh sách sản phẩm
                                     <div>
                                         <ul className={`list-course ${openListcourse ? 'active' : 'inactive'}`}>
-                                            <li onClick={() => { setCategories('TẤT CẢ KHÓA HỌC'); navigate("/ProductList") }}>
+                                            <li onClick={() => { setCategories('TẤT CẢ SẢN PHẨM'); navigate("/ProductList") }}>
                                                 Tất cả
                                             </li>
-                                            <li onClick={() => { setCategories('Marketing'); setCurrentPage(1); navigate("/ProductList/Marketing") }}>
-                                                Marketing
+                                            <li onClick={() => { setCategories('PBT'); setCurrentPage(1); navigate("/ProductList/PBT") }}>
+                                                PBT
                                             </li>
-                                            <li onClick={() => { setCategories('Công nghệ thông tin'); setCurrentPage(1); navigate("/ProductList/Công nghệ thông tin") }}>
-                                                Công nghệ thông tin
+                                            <li onClick={() => { setCategories('PVC'); setCurrentPage(1); navigate("/ProductList/PVC") }}>
+                                                PVC
                                             </li>
-                                            <li onClick={() => { setCategories('Thiết kế đồ họa'); setCurrentPage(1); navigate("/ProductList/Thiết kế đồ họa") }}>
-                                                Thiết kế đồ họa
+                                            <li onClick={() => { setCategories('Resin'); setCurrentPage(1); navigate("/ProductList/Resin") }}>
+                                                Resin
                                             </li>
-                                            <li onClick={() => { setCategories('Kỹ năng mềm'); setCurrentPage(1); navigate("/ProductList/Kỹ năng mềm") }}>
-                                                Kỹ năng mềm
-                                            </li><li onClick={() => { setCategories('Âm nhạc'); setCurrentPage(1); navigate("/ProductList/Âm nhạc") }}>
-                                                Âm nhạc
-                                            </li>
-                                            <li onClick={() => { setCategories('Sales, bán hàng'); setCurrentPage(1); navigate("/ProductList/Sales, bán hàng") }}>
-                                                Sales, bán hàng
-                                            </li>
-                                            <li onClick={() => { setCategories('Kỹ năng ngoại ngữ'); setCurrentPage(1); navigate("/ProductList/Kỹ năng ngoại ngữ") }}>
-                                                Kỹ năng ngoại ngữ
-                                            </li>
-                                            <li onClick={() => { setCategories('Tin học văn phòng'); setCurrentPage(1); navigate("/ProductList/Tin học văn phòng") }}>
-                                                Tin học văn phòng
-                                            </li>
-                                            <li onClick={() => { setCategories('Phát triển cá nhân'); setCurrentPage(1); navigate("/ProductList/Phát triển cá nhân") }}>
-                                                Phát triển cá nhân
-                                            </li>
-                                            <li onClick={() => { setCategories('Gia đình'); setCurrentPage(1); navigate("/ProductList/Gia đình") }}>
-                                                Gia đình
-                                            </li>
-                                            <li onClick={() => { setCategories('Sức khỏe, giới tính'); setCurrentPage(1); navigate("/ProductList/Sức khỏe, giới tính") }}>
-                                                Sức khỏe, giới tính
-                                            </li>
-                                            <li onClick={() => { setCategories('Nhiếp ảnh, quay phim'); setCurrentPage(1); navigate("/ProductList/Nhiếp ảnh, quay phim") }}>
-                                                Nhiếp ảnh, quay phim
-                                            </li>
-
                                         </ul>
                                     </div>
                                     <img className={`arrow-icon ${openListcourse ? 'active' : 'inactive'}`} style={{ position: 'absolute' }} src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" />
                                 </li>
 
-                                <li><Link className='text-course-nav'>Khóa học tiêu biểu</Link></li>
+                                {/* <li><Link className='text-course-nav'>Khóa học tiêu biểu</Link></li> */}
                                 <li><Link className='text-course-nav'>Liên hệ</Link></li>
                                 <li><Link className='text-course-nav'>Giới thiệu</Link></li>
                             </ul>
@@ -171,10 +144,10 @@ const ProductList = (props) => {
                                             <Form.Check onChange={() => { setlevelNormal(!levelNormal); setCurrentPage(1) }} type="checkbox" label="Cơ bản" />
                                         </Form.Group>
                                         <Form.Group className="mb-1" controlId="formBasicCheckboxMedium">
-                                            <Form.Check onChange={() => { setlevelMedium(!levelMedium); setCurrentPage(1) }} type="checkbox" label="Mọi cấp độ" />
+                                            <Form.Check onChange={() => { setlevelMedium(!levelMedium); setCurrentPage(1) }} type="checkbox" label="Trung bình" />
                                         </Form.Group>
                                         <Form.Group className="mb-1" controlId="formBasicCheckboxHard">
-                                            <Form.Check onChange={() => { setlevelHard(!levelHard); setCurrentPage(1) }} type="checkbox" label="Nâng cao" />
+                                            <Form.Check onChange={() => { setlevelHard(!levelHard); setCurrentPage(1) }} type="checkbox" label="Cao cấp" />
                                         </Form.Group>
                                     </Form>
                                 </div>
@@ -184,11 +157,11 @@ const ProductList = (props) => {
                                     <p className="header-text-sub">MỨC GIÁ</p>
                                     <Form onChange={() => { setfilterprice(!filterprice); setCurrentPage(1) }}>
                                         <Form.Group className="mb-1" controlId="formBasicCheckboxUnder200">
-                                            <Form.Check type="checkbox" onChange={() => { setPricesUnder200(!priceUnder200) }} label="Giá dưới 200.000đ" />
+                                            <Form.Check type="checkbox" onChange={() => { setPricesUnder200(!priceUnder200) }} label="Giá dưới 300.000đ" />
                                         </Form.Group>
-                                        <Form.Group className="mb-1" onChange={() => { setPricesBT200300(!priceBT200300) }} controlId="formBasicCheckboxBetween200300">
+                                        {/* <Form.Group className="mb-1" onChange={() => { setPricesBT200300(!priceBT200300) }} controlId="formBasicCheckboxBetween200300">
                                             <Form.Check type="checkbox" label="200.000đ - 300.000đ" />
-                                        </Form.Group>
+                                        </Form.Group> */}
                                         <Form.Group className="mb-1" onChange={() => { setPricesBT300400(!priceBT300400) }} controlId="formBasicCheckboxBetween300400">
                                             <Form.Check type="checkbox" label="300.000đ - 400.000đ" />
                                         </Form.Group>
@@ -244,7 +217,7 @@ const ProductList = (props) => {
             </div>
             
         </div>
-        <>
+        {/* <>
         {viewedItem===0?null:<div className="ProductList-ViewedItem">
                 <div className='line-box'></div>
                     <h2 className='header-text'>KHÓA HỌC BẠN ĐÃ XEM</h2>
@@ -280,7 +253,7 @@ const ProductList = (props) => {
                     )}
                     </Swiper>
             </div>}
-        </>
+        </> */}
     </div>);
 }
 export default ProductList;

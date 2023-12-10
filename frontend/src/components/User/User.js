@@ -21,7 +21,7 @@ const User = (props) => {
                             Giỏ hàng
                         </Link>
                         <Link to="/user/my-course" id="user-mycourse" className="fw-bolder h6" >
-                            Khoá học đã mua
+                            Sản phẩm đã mua
                         </Link>
                         <Link to="/user/profile" id="user-account" className="fw-bolder h6" >
                             Hồ sơ

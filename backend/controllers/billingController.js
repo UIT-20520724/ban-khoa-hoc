@@ -155,7 +155,7 @@ async function deleteBillingById(req, res) {
 async function createOrder(orders) {
   let total_amount = 0;
   const orderStatus = "Pending";
-  let purchased_courses = "Thanh toan cho khoa hoc: ";
+  let purchased_courses = "Thanh toan cho san pham: ";
   const order = {
     order_id: new mongoose.Types.ObjectId(),
     payment_method: {

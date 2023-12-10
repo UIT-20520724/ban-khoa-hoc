@@ -22,15 +22,12 @@ const Banner = (props) => {
     return (
         <div >
             <Swiper
-                spaceBetween={30}
+                spaceBetween={0}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-                grabCursor={true}
-                navigation={true}
+                autoplay={false}
+                loop={false}
+                grabCursor={false}
+                navigation={false}
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"
             >
@@ -68,14 +65,14 @@ const Banner = (props) => {
                     <SwiperSlide style={{ paddingBottom: '12px' }}>
                         <Row >
                             <Col className='col-img' xs='3'>
-                                <img className='iconn' src={service_1} />
+                                <img className='iconn' src={service_3} />
                             </Col>
                             <Col className='col-text'>
                                 <Row>
-                                    <p className='top-text'>GIẢNG VIÊN UY TÍN</p>
+                                    <p className='top-text'>THIẾT KẾ ĐA DẠNG</p>
                                 </Row>
                                 <Row>
-                                    <p className='bot-text'>Bài học chất lượng</p>
+                                    <p className='bot-text'>Sáng tạo thiết kế của chính bạn</p>
                                 </Row>
                             </Col>
                         </Row>
@@ -87,24 +84,24 @@ const Banner = (props) => {
                             </Col>
                             <Col className='col-text' >
                                 <Row>
-                                    <h6 className='top-text'>THANH TOÁN 1 LẦN</h6>
+                                    <h6 className='top-text'>THANH TOÁN TRỰC TUYẾN</h6>
                                 </Row>
                                 <Row>
-                                    <p className='bot-text'>Học mãi mãi</p>
+                                    <p className='bot-text'>Hỗ trợ nhiều phương thức thanh toán</p>
                                 </Row>
                             </Col>
                         </Row>
                     </SwiperSlide><SwiperSlide>
                         <Row>
                             <Col className='col-img' xs='3'>
-                                <img className='iconn' src={service_3} />
+                                <img className='iconn' src={service_1} />
                             </Col>
                             <Col className='col-text'>
                                 <Row>
-                                    <h6 className='top-text'>HỌC TRỰC TUYẾN</h6>
+                                    <h6 className='top-text'>CHẤT LƯỢNG CAO CẤP</h6>
                                 </Row>
                                 <Row>
-                                    <p className='bot-text'>Hỗ trợ trực tuyến</p>
+                                    <p className='bot-text'>Đa dạng chất liệu phù hợp với nhu cầu</p>
                                 </Row>
                             </Col>
                         </Row>
@@ -115,10 +112,10 @@ const Banner = (props) => {
                             </Col>
                             <Col className='col-text'>
                                 <Row>
-                                    <h6 className='top-text'>CAM KẾT CHẤT LƯỢNG</h6>
+                                    <h6 className='top-text'>ĐẢM BẢO CHẤT LƯỢNG</h6>
                                 </Row>
                                 <Row>
-                                    <p className='bot-text'>Chứng chỉ giáo dục</p>
+                                    <p className='bot-text'>Chính sách hỗ trợ đổi trả sản phẩm</p>
                                 </Row>
                             </Col>
                         </Row>

@@ -105,8 +105,8 @@ function ResponsiveAutoExample() {
                     <div className="purchase-decription">
                       <div>
                         <div className="banking-account">
-                          <p>Khách hàng chuyển khoản vào tài khoản của Udemy trong phần Hồ Sơ.</p>
-                          <p>Nhân viên của Udemy sẽ gọi điện cho quý khách để xác nhận đơn hàng chuyển khoản.</p>
+                          <p>Khách hàng chuyển khoản vào tài khoản của KeyCap Guys trong phần Hồ Sơ.</p>
+                          <p>Nhân viên của KeyCap Guys sẽ gọi điện cho quý khách để xác nhận đơn hàng chuyển khoản.</p>
                           <p>Bạn vui lòng để ý điện thoại ngay khi đặt hàng thành công nhé.</p>
                         </div>
                       </div> 

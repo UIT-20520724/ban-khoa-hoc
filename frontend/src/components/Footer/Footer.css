@@ -1,5 +1,5 @@
 .footer-container{
-    background-color: black;
+    background-color: #5C5470;
     padding: 25px ;
 }
 .footer-logo{
@@ -14,7 +14,7 @@
 .footer-btn-contact{
     border-radius: 8px;
     border: none;
-    background-color: #00bc86;
+    background-color: black;
     padding: 5px;
     margin-right: 10px;
     

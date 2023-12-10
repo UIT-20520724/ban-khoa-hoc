@@ -26,21 +26,12 @@ const courseSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  whatYoullLearn: {
-    type: [String],
-    default: []
-  },
   name: {
     type: String,
     required: true
   },
   categories: {
     type: String,
-    required: true
-  },
-  idLecturer: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Lecturer',
     required: true
   }
 });

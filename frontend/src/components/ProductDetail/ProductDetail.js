@@ -86,11 +86,11 @@ const ProductDetail = (props) => {
                             <p>
                                 Cấp độ<br />
                                 {level === "normal" && <div className="level-normal" >Cơ bản</div>}
-                                {level === "medium" && <div className="level-medium" >Mọi cấp độ</div>}
-                                {level === "hard" && <div className="level-hard" >Nâng cao</div>}
+                                {level === "medium" && <div className="level-medium" >Trung bình</div>}
+                                {level === "hard" && <div className="level-hard" >Cao cấp</div>}
                             </p>
                         </Col>
-                        <Col>
+                        {/* <Col>
                             <p >
                                 Học Viên<br />Đang cập nhật
                             </p>
@@ -99,7 +99,7 @@ const ProductDetail = (props) => {
                             <p >
                                 Ngôn Ngữ<br />Tiếng Việt
                             </p>
-                        </Col>
+                        </Col> */}
                         </Row>
                         </Col>
                     </Row>
@@ -108,28 +108,28 @@ const ProductDetail = (props) => {
                             <Image className="product-poster" src={product.poster} />
                         </Col>
                         <Col xs='12' lg='4' className="product-course-price" >
-                            <h2 className="cost-head">GIÁ TIỀN KHÓA HỌC</h2>
+                            <h2 className="cost-head">GIÁ TIỀN SẢN PHẨM</h2>
                             <p className="product-cost">{product.cost.toLocaleString('vi', { style: 'currency', currency: 'VND' })} </p><br />
                             <p className="product-cost-sales">{Math.ceil(product.cost * 1.3).toLocaleString('vi', { style: 'currency', currency: 'VND' })}</p>
                                 <Button className="product-cart-button" onClick={handleClickAdd}>Thêm vào giỏ hàng</Button>
-                            <h2 className="product-des">MÔ TẢ KHÓA HỌC</h2>
+                            <h2 className="product-des">MÔ TẢ SẢN PHẨM</h2>
                             <p style={{ fontSize: '16px' }}>{product.description}</p>
                         </Col>
                     </Row>
-                    <Row>
+                    {/* <Row>
                         <div className="bot-body-product">
                             <Container className="youll-learn">
                                 <h2 className="learn-title">CHI TIẾT KHÓA HỌC</h2>
                                 {product.whatYoullLearn.map((item) => <li>{item}</li>)}
                             </Container>
                         </div>
-                    </Row>
+                    </Row> */}
                 </Container>
             </div>
         }
         <>
             {viewedItem === 0 ? null : <div className="ProductList-ViewedItem">
-                <div className='line-box'></div>
+                {/* <div className='line-box'></div>
                 <h2 className='header-text'>KHÓA HỌC BẠN ĐÃ XEM</h2>
                 <Swiper
                     scrollbar={{
@@ -161,7 +161,7 @@ const ProductDetail = (props) => {
                             <Product product={item} />
                         </SwiperSlide>
                     )}
-                </Swiper>
+                </Swiper> */}
             </div>}
         </>
     </div>);

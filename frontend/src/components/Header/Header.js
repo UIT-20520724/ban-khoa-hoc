@@ -10,6 +10,7 @@ import "./Header.css"
 import { useNavigate} from 'react-router-dom';
 import { logoutSuccess } from '../../features/userSlice';
 import Cookies from 'js-cookie';
+import keycaplogo from './zyro-image.png'
 
 const Header = () => {
   const totalCount = useSelector((state) => state.Allcart.totalQuantity);
@@ -32,7 +33,7 @@ const Header = () => {
   };
   return(
       <header>
-        <div className='tophead'>
+        {/* <div className='tophead'>
           <div className='container_header'>
             <div className='contact_header'>
               <span>
@@ -48,7 +49,7 @@ const Header = () => {
               <a className='fone' href='tel:19006750'> 19006750</a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='header no-gutters'>
           <div className='container'>
@@ -57,7 +58,7 @@ const Header = () => {
                 <div className='logo_center'>
                   <div className='logo'>
                     <Link to='/' className='logo-wrapper'>
-                    <img className='icon' src="//bizweb.dktcdn.net/100/453/393/themes/894913/assets/logo.png?1676281841878" alt="logo Template Udemy" />
+                    <img className='icon' src={keycaplogo} alt="logo key cap" />
                     </Link>
                   </div>
                 </div>
@@ -79,7 +80,7 @@ const Header = () => {
                         </li>
                         <li className='nav-item level0'>
                           <Link to='/ProductList'>
-                            Danh sách khóa học
+                            Danh sách sản phẩm
                           </Link>
                         </li>
                         <li className='nav-item'>
@@ -102,7 +103,7 @@ const Header = () => {
                           <Link to='/user/profile'>Hồ sơ</Link>
                         </li>
                         <li className='d-lg-none'>
-                          <Link to='/user/my-course'>Khóa học của tôi</Link>
+                          <Link to='/user/my-course'>Sản phẩm của tôi</Link>
                         </li>
                         <li className='d-lg-none'>
                           <a style={{color:'red',}} id="btn_logout" onClick={handleLogout}>Đăng xuất</a>
@@ -140,7 +141,7 @@ const Header = () => {
               <div className='col-xl-5 col-lg-6 col-12'>
                 <div className='header-right'>
                   <div className='text_header'>
-                    <Link to='/ProductList'>Tất cả khóa học</Link>
+                    <Link to='/ProductList'>Tất cả sản phẩm</Link>
                   </div>
                   <div className='top-cart-contain'>
                     <div className='mini-cart text-xs-center'>
@@ -166,7 +167,7 @@ const Header = () => {
                               </li>
                               <li>
                                 <Link to='/user/my-course'>
-                                  Khóa học của tôi
+                                  Sản phẩm của tôi
                                 </Link>
                               </li>
                               <li>

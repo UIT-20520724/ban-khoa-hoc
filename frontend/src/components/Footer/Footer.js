@@ -10,7 +10,7 @@ import { MdEmail,MdCall } from 'react-icons/md'
 import { SiInstagram } from 'react-icons/si'
 import { FaFacebookF} from 'react-icons/fa'
 import { AiFillYoutube} from 'react-icons/ai'
-
+import logo from './zyro-image.png'
 const Footer = () => {
 
     return (
@@ -18,7 +18,7 @@ const Footer = () => {
             <Container >
                 <Row style={{display:"flex"}} >
                     <Col lg='4' sm='6' style={{justifySelf:'center'}}>
-                        <img className="footer-logo"  src='https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/logo-footer.png?1676281841878' />
+                        <img className="footer-logo"  src={logo} />
                         <div className="footer-btn-container">
                             <button className="footer-btn-contact">
                                 <MdCall className="footer-btn-contact-icon"/>
@@ -41,7 +41,7 @@ const Footer = () => {
 
                             <div className="footer-contact-detail">
                                 <SlLocationPin  className="footer-contact-detail-icon"/>
-                                <p className="footer-contact-detail-text">Sunview Town, Thủ Đức, Hồ Chí Minh</p>
+                                <p className="footer-contact-detail-text">UIT, Thủ Đức, Hồ Chí Minh</p>
                             </div>
                             <div className="footer-contact-detail">
                                 <BsTelephone className="footer-contact-detail-icon"/>
@@ -49,18 +49,18 @@ const Footer = () => {
                             </div>
                             <div className="footer-contact-detail" style={{marginBottom:'10px'}}>
                                 <MdEmail className="footer-contact-detail-icon"/>
-                                <p className="footer-contact-detail-text">minhhung.0163@gmail.com</p>
+                                <p className="footer-contact-detail-text">keycapguys@gmail.com</p>
                             </div>
                         </Row>
                     </Col>
                     <Col lg='2' sm='6'>
-                        <p className="footer-headertext">VỀ LORDEDU</p>
+                        <p className="footer-headertext">VỀ KEYGUYS</p>
                         <ul className="footer-aboutlink">
                             <li className="footer-aboutlink-text">
                                 <Link>Trang chủ</Link>
                             </li >
                             <li className="footer-aboutlink-text">
-                                <Link>Danh sách khóa học</Link>
+                                <Link>Danh sách sản phẩm</Link>
                             </li>
                             <li className="footer-aboutlink-text">
                                 <Link>Liên hệ</Link>
