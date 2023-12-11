@@ -13,7 +13,7 @@ import Cookies from 'js-cookie';
 import UserDataService from '../../services/UserDataService';
 import "./Login.css";
 import { BASE_URL } from "../../config/config";
-
+import banner from "./combo-pbt-banner-no-logo_1024x1024.webp"
 const Login=()=>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -129,7 +129,7 @@ const Login=()=>{
         setIsRecoverPasswordFormVisible(true);
         console.log("Hiển thị form lấy lại mật khẩu: true")
     };
-    const img = ['https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/breadcrumb_image.png?1676281841878']
+    const img = [banner]
     return(
         <div>
             <Banner imgs={img} />

@@ -10,7 +10,7 @@ import "./Header.css"
 import { useNavigate} from 'react-router-dom';
 import { logoutSuccess } from '../../features/userSlice';
 import Cookies from 'js-cookie';
-import keycaplogo from './zyro-image.png'
+import keycaplogo from './logo.png'
 
 const Header = () => {
   const totalCount = useSelector((state) => state.Allcart.totalQuantity);

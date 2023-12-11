@@ -15,7 +15,7 @@ import CoursesDataService from "../../services/CoursesDataService";
 import BillingDataService from "../../services/BillingDataService";
 import { Button, FormGroup } from "react-bootstrap";
 import { addToCart, viewedItem } from "../../features/cartSlice"
-
+import banner from "./combo-pbt-banner-no-logo_1024x1024.webp"
 const ProductDetail = (props) => {
     let d = new Date;
     const { viewedItem } = useSelector((state) => state.Allcart)
@@ -62,7 +62,7 @@ const ProductDetail = (props) => {
             });
     });
 
-    const img = ['https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/breadcrumb_image.png?1676281841878']
+    const img = [banner]
     return (<div>
         <Banner imgs={img} />
         {product &&
@@ -129,8 +129,8 @@ const ProductDetail = (props) => {
         }
         <>
             {viewedItem === 0 ? null : <div className="ProductList-ViewedItem">
-                {/* <div className='line-box'></div>
-                <h2 className='header-text'>KHÓA HỌC BẠN ĐÃ XEM</h2>
+                <div className='line-box'></div>
+                <h2 className='header-text'>SẢN PHẨM BẠN ĐÃ XEM</h2>
                 <Swiper
                     scrollbar={{
                         hide: false,
@@ -161,7 +161,7 @@ const ProductDetail = (props) => {
                             <Product product={item} />
                         </SwiperSlide>
                     )}
-                </Swiper> */}
+                </Swiper>
             </div>}
         </>
     </div>);

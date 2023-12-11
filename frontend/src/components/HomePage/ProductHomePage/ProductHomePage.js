@@ -240,31 +240,31 @@ const ProductHomePage = () => {
                     </Row>
                 </div>
             </div>
-            {/* <div className='hot-course'>
+            <div className='hot-course'>
                 <div className='line-box'></div>
                 <Row>
                     <Col xs='3'>
-                        <h2 className='header-text'>KHÓA HỌC NỔI BẬT</h2>
+                        <h2 className='header-text'>SẢN PHẨM NỔI BẬT</h2>
                     </Col>
                     <Col className='col-new'>
                         <button className='btn-new btn_fc btn_new_focus' onClick={()=>sethotProducts(Products)} autoFocus={true}>
                             Tất cả
                         </button>
-                        <button onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Thiết kế đồ họa'))} className='btn-new btn_fc' >
-                            Thiết kế đồ họa
+                        <button onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Resin'))} className='btn-new btn_fc' >
+                            Resin
                         </button>
-                        <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Sales, bán hàng'))}>
-                            Sales, bán hàng
+                        <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='PBT'))}>
+                            PBT
                         </button>
-                        <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Âm nhạc'))}>
-                            Âm nhạc
+                        <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='PVC'))}>
+                            PVC
                         </button>
-                        <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Công nghệ thông tin'))}>
+                        {/* <button className='btn-new btn_fc' onClick={()=>sethotProducts(Products.filter(item=>item.categories==='Công nghệ thông tin'))}>
                             Công nghệ thông tin
-                        </button>
+                        </button> */}
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col className='col-new-mobile'>
                         <Swiper
                             scrollbar={{
@@ -309,16 +309,16 @@ const ProductHomePage = () => {
                             </button></SwiperSlide>
                         </Swiper>
                     </Col>
-                </Row>
+                </Row> */}
                 <div className='list-hot-course'>
                     <Row style={{ padding: '15px 0px' }}>
-                        <Col xs={6} style={{ padding: '0px 8px' }}>
+                        {/* <Col xs={6} style={{ padding: '0px 8px' }}>
                             <img style={{ width: '100%', borderRadius: '10px' }} src='https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/banner_featured_1.png?1676281841878' />
                         </Col>
                         <Col xs={6} style={{ padding: '0px 8px' }}>
                             <img style={{ width: '100%', borderRadius: '10px' }} src='https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/banner_featured_2.png?1676281841878' />
 
-                        </Col>
+                        </Col> */}
                     </Row>
                     
                     {hotProducts.length === 0 ? null :
@@ -333,7 +333,7 @@ const ProductHomePage = () => {
                         <button className='btn-all' onClick={() => navigate("/ProductList")}>Xem tất cả</button>
                     </Col>
                 </Row>
-            </div> */}
+            </div>
         </div>
     )
 }

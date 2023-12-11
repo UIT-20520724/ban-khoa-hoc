@@ -10,7 +10,7 @@ import { MdEmail,MdCall } from 'react-icons/md'
 import { SiInstagram } from 'react-icons/si'
 import { FaFacebookF} from 'react-icons/fa'
 import { AiFillYoutube} from 'react-icons/ai'
-import logo from './zyro-image.png'
+import logo from './logo.png'
 const Footer = () => {
 
     return (

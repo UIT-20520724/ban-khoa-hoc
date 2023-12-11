@@ -217,10 +217,10 @@ const ProductList = (props) => {
             </div>
             
         </div>
-        {/* <>
+        <>
         {viewedItem===0?null:<div className="ProductList-ViewedItem">
                 <div className='line-box'></div>
-                    <h2 className='header-text'>KHÓA HỌC BẠN ĐÃ XEM</h2>
+                    <h2 className='header-text'>SẢN PHẨM BẠN ĐÃ XEM</h2>
                 <Swiper
                     scrollbar={{
                         hide: false,
@@ -253,7 +253,7 @@ const ProductList = (props) => {
                     )}
                     </Swiper>
             </div>}
-        </> */}
+        </>
     </div>);
 }
 export default ProductList;

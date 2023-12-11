@@ -7,6 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import FullPageLoader from "../FullPageLoader/FullPageLoader";
 import './Register.css'
 import { BASE_URL } from '../../config/config';
+import banner from "./combo-pbt-banner-no-logo_1024x1024.webp"
 const Register = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -93,7 +94,7 @@ const Register = () => {
         setIsLoading(false);
     }
     
-    const img = ['https://bizweb.dktcdn.net/100/453/393/themes/894913/assets/breadcrumb_image.png?1676281841878']
+    const img = [banner]
 
     return (
     <div>
