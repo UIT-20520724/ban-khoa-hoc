@@ -43,7 +43,7 @@ const MyProducts = () => {
             </Col>
             <Col className="div_my-product">
                 <div className="container-form_user-mycourse">
-                    <h2>Khóa học của tôi</h2>
+                    <h2>Sản phẩm đã mua</h2>
                     <div style={{ padding: '40px 30px 40px 30px', boxShadow: '0px 4px 30px rgba(19,28,25,0.1)', borderRadius: '25px' }}>
                         <Col className="cart-container">
                             <Row className="cart-header">
