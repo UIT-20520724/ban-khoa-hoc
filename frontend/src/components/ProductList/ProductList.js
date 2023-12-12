@@ -138,7 +138,7 @@ const ProductList = (props) => {
                         <Row>
                             <Col xs='5' md='12'>
                                 <div className={`sb-level  ${opensubCourse ? 'activesubcourse' : 'inactivesubcourse'}`}>
-                                    <p className="header-text-sub">TRÌNH ĐỘ</p>
+                                    <p className="header-text-sub">CẤP ĐỘ</p>
                                     <Form onChange={() => setLevel(!level)}>
                                         <Form.Group className="mb-1" controlId="formBasicCheckboxNormal">
                                             <Form.Check onChange={() => { setlevelNormal(!levelNormal); setCurrentPage(1) }} type="checkbox" label="Cơ bản" />

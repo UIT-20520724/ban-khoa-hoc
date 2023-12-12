@@ -49,10 +49,10 @@ const Product = (props) => {
     }
    else if (data.data.filter(item=>item.course_id===props.product._id).length!==0){
     variant='warning';
-    enqueueSnackbar('Khóa học này đã được thanh toán!', { variant });
+    enqueueSnackbar('Sản phẩm này đã được thanh toán!', { variant });
   }else{
     variant='warning';
-    enqueueSnackbar('Khóa học đã có trong giỏ hàng!', { variant });
+    enqueueSnackbar('Sản phẩm đã có trong giỏ hàng!', { variant });
   }
    })
 
